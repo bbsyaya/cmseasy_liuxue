@@ -1,0 +1,64 @@
+{template 'header.html'}
+<div class="box box2">
+<div class="box2_t"></div>
+<div class="box2_b"></div>
+<div class="left">
+{template 'left.html'}
+</div>
+<div class="right">
+<div class="right_t"></div>
+<div class="right_b"></div>
+			<div class="title20">
+				{template 'position.html'}
+				<h5>{$category[$catid]['catname']}</h5><span>{$category[$catid]['htmldir']}</span>
+			</div>
+<div id="content">
+
+
+<div class="blank20"></div>
+<!-- 栏目标题结束 -->
+
+<!-- 内容列表开始 -->
+<table id="talbe" width="100%" border="1" align="center" cellpadding="8" cellspacing="0" bordercolor="#999999"> 
+<tr> 
+<td width="44" align="center" ><strong>{lang('no.')}</strong></td> 
+<td width="184" align="center"><strong>{lang('RecruitmentPost')}</strong></td> 
+<td width="199" align="center" ><strong>{lang('RecruitingDepartment')}</strong></td> 
+<td width="84" align="center" ><strong>{lang('ReleaseTime')}</strong></td> 
+<td width="101" align="center" ><strong>{lang('intro')}</strong></td> 
+</tr> 
+{loop $archives $i $arc}
+<tr> 
+<td height="20" align="center" style="  font-size:11px;">{=$i+1}</td> 
+<td height="20" align="center"><a title="{$arc['stitle']}" target="_blank" href="{$arc['url']}">{$arc['title']}</a></td> 
+<td height="20" align="center">{$arc['my_zhaopinbumen']}</td> 
+<td height="20" align="center" style="  font-size:11px;"><span style="">{$arc['adddate']}</span></td> 
+<td height="20" align="center"><a title="{$arc['stitle']}" target="_blank" href="{$arc['url']}"><img src="{$skin_path}/images/btn_jobs.gif" alt="{lang('more')}" width="80" height="21" style="margin:5px 0 0 0;" border="0" /></a></td> 
+</tr> 
+{/loop}
+</table>
+<!-- 内容列表结束 -->
+
+<div class="blank30"></div>
+
+<!-- 列表分页开始 -->
+{if isset($pages)}
+{category_pagination($catid)}
+{/if}
+<!-- 列表分页结束 -->
+
+<div class="blank30"></div>
+<a title="{lang(gotop)}" href="#" class="clear floatright"><img alt="{lang(gotop)}" src="{$skin_url}/images/gotop.gif"></a>
+<div class="blank30"></div>
+<div class="clear"></div>
+</div>
+</div>
+<!-- 右侧结束 -->
+
+<div class="c_bottom"></div>
+<div class="clear"></div>
+</div>
+<!-- 中部结束 -->
+
+
+{template 'footer.html'}

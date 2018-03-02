@@ -1,0 +1,7 @@
+{loop archive($_catid,$_typeid,$_spid,$_area,$_length,$_ordertype,$_limit,$_image,$_attr1,$_son,$_wheretype,$_tpl,$_intro_len,$_istop) $archive}
+
+<a href="{$archive['url']}"  class="newsleft"><img alt="{$archive['stitle']}" src="{$archive['thumb']}" width="163" height="133" class="PicAuto" /></a>
+<a href="{$archive['url']}" style="color:{$arc[color]};" class="news_link">{$archive['title']}...</a>
+<div>{$archive[intro]}</div>
+
+{/loop}

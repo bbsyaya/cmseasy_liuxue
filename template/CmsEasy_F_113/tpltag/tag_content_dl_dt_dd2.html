@@ -1,0 +1,10 @@
+{loop archive($_catid,$_typeid,$_spid,$_area,$_length,$_ordertype,$_limit,$_image,$_attr1,$_son,$_wheretype,$_tpl,$_intro_len,$_istop) $archive}
+
+<li>
+	<a href="{$archive['url']}" class="experts_img"><img alt="{$archive['stitle']}" src="{$archive['thumb']}" width="118" height="131" class="PicAuto" /></a>
+	<p>{lang(zhuanjiamingcheng)}<span>{$archive['title']}</span></p>
+	<div>{$archive[intro]}</div>
+	<a href="{$archive['url']}" title="{lang(more2)}" class="con1more">{lang(more2)}</a>
+
+</li>
+{/loop}

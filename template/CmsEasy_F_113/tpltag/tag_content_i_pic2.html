@@ -1,0 +1,7 @@
+{loop archive($_catid,$_typeid,$_spid,$_area,$_length,$_ordertype,$_limit,$_image,$_attr1,$_son,$_wheretype,$_tpl,$_intro_len,$_istop) $archive}
+
+
+<a title="{$archive['stitle']}" target="_blank" href="{$archive['url']}"><img alt="{$archive['stitle']}" src="{$archive['thumb']}" onerror='this.src="{config::get('onerror_pic')}"' width="233" height="206"  /></a>
+
+
+{/loop}

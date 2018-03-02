@@ -1,0 +1,42 @@
+{template 'header.html'}
+<div class="box box2">
+<div class="box2_t"></div>
+<div class="box2_b"></div>
+<div class="left">
+{template 'left.html'}
+</div>
+<div class="right">
+<div class="right_t"></div>
+<div class="right_b"></div>
+			<div class="title20">
+				{template 'position.html'}
+				<h5>{$announ[title]}</h5><span></span>
+			</div>
+<div id="content">
+
+
+
+
+<div class="blank30"></div>
+
+<!-- 正文开始 -->
+{$announ[content]}
+<!-- 正文结束 -->
+
+<div class="blank30"></div>
+<a title="{lang(gotop)}" href="#" class="clear floatright"><img alt="{lang(gotop)}" src="{$skin_url}/images/gotop.gif"></a>
+<div class="blank30"></div>
+<div class="clear"></div>
+</div>
+</div>
+<!-- 右侧结束 -->
+
+<div class="c_bottom"></div>
+<div class="clear"></div>
+</div>
+<!-- 中部结束 -->
+
+
+{template 'width_max.html'}
+
+{template 'footer.html'}

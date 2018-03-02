@@ -1,0 +1,145 @@
+<?php
+if(front::get('case') == 'area'){
+?>
+<div class="left1">
+<div class="left1_1">
+<h3>{lang(area)}</h3>
+</div>
+</div>
+<div class="blank20"></div>
+<?php
+}elseif(front::get('case') == 'announ'){
+?>
+<div class="left1">
+<div class="left1_1">
+<h3>{lang(announ)}</h3>
+</div>
+</div>
+<div class="blank20"></div>
+<?php
+}elseif(front::get('case') == 'guestbook'){
+?>
+<div class="left1">
+<div class="left1_1">
+<h3>{lang(guestbook)}</h3>
+</div>
+</div>
+<div class="blank20"></div>
+<?php
+}elseif(front::get('case') == 'comment'){
+?>
+<div class="left1">
+<div class="left1_1">
+<h3>{lang(comment)}</h3>
+</div>
+</div>
+<div class="blank20"></div>
+<?php
+}elseif(front::get('case') == 'type'){
+?>
+<!--只展开当前栏目所在一级栏目下的分类-->
+<?php $__pid = gettypeparentsid($typeid);?>
+
+
+
+{loop typies() $t}
+{if $t[typeid]==$__pid}
+<div class="left1">
+				<div class="left1_t"></div>
+					<div class="left1_1">
+					<h3>{$t[typename]}</h3><span>{$t[htmldir]}</span>
+					</div>
+					<ul>
+{loop typies($t[typeid]) $t1}
+<li href="{$t1[url]}"{if $t1[catid]==$catid} class="on"{/if} ><a title="{$t1[typename]}" href="{$t1[url]}"{if $t1[typeid]==$typeid} class="on"{/if}>{$t1[typename]}</a></li> 
+{loop typies($t1[typeid]) $t2}  
+<li><a title="{$t2[typename]}" href="{$t2[url]}"{if $t2[typeid]==$typeid} class="on"{/if}>{$t2[typename]}</a></li>   
+{loop typies($t2[typeid]) $t3}  
+<li><a title="{$t3[typename]}" href="{$t3[url]}"{if $t3[typeid]==$typeid}  class="on"{/if}>{$t3[typename]}</a></li>   
+{/loop}  
+{/loop}  
+{/loop}
+</ul>
+<div class="left1_b"></div>
+</div>		
+<div class="blank20"></div>
+
+{/if}
+{/loop}
+<!--只展开当前栏目所在一级栏目下的分类-->
+
+<?php
+}elseif(front::get('case') == 'special'){
+?>
+<div class="left1">
+<div class="left1_1">
+<h3>{lang(special)}</h3>
+</div>
+</div>
+<div class="blank20"></div>
+<?php
+}elseif(front::get('case') == 'tag'){
+?>
+<div class="left1">
+<div class="left1_1">
+<h3>{lang(tag)}</h3>
+</div>
+</div>
+<div class="blank20"></div>
+<?php
+}elseif(front::get('case') == 'mailsubscription'){
+?>
+
+<?php
+}else{
+
+?>
+
+<!--只展开当前栏目所在一级栏目下的分类-->
+<?php $__pid = getcategoryparentsid($catid);?>
+{loop categories() $t}
+{if $t[catid]==$__pid}
+<div class="left1">
+				<div class="left1_t"></div>
+					<div class="left1_1">
+					<h3>{$t[catname]}</h3><span>{$t[htmldir]}</span>
+					</div>
+<ul>
+{loop categories($t[catid]) $t1}
+<li {if $t1[catid]==$catid} class="on"{/if} ><a title="{$t1[catname]}" href="{$t1[url]}"{if $t1[catid]==$catid} class="on"{/if}>{$t1[catname]}</a></li>
+{loop categories($t1[catid]) $t2}
+<?php
+$parents = category::getparentsid($catid);
+?>
+{if in_array($t2['parentid'],$parents)}
+<li><a title="{$t2[catname]}" href="{$t2[url]}"{if $t2[catid]==$catid} class="on"{/if}>&nbsp;&nbsp;└{$t2[catname]}</a></li> 
+{loop categories($t2[catid]) $t3}  
+<li><a title="{$t3[catname]}" href="{$t3[url]}"{if $t3[catid]==$catid}  class="on"{/if}>&nbsp;&nbsp;&nbsp;└{$t3[catname]}</a></li>
+{loop categories($t3[catid]) $t4}  
+<li><a title="{$t4[catname]}" href="{$t4[url]}"{if $t4[catid]==$catid}  class="on"{/if}>&nbsp;&nbsp;&nbsp;&nbsp;└{$t4[catname]}</a></li>
+{loop categories($t4[catid]) $t5}  
+<li><a title="{$t5[catname]}" href="{$t5[url]}"{if $t5[catid]==$catid}  class="on"{/if}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└{$t5[catname]}</a></li>  
+{/loop}
+{/loop}
+{/loop}
+{/if}
+{/loop}  
+{/loop}
+</ul>
+<div class="left1_b"></div>
+</div>			
+<div class="blank20"></div>
+
+{/if}
+{/loop}
+<!--只展开当前栏目所在一级栏目下的分类-->
+
+
+<?php
+}
+?>
+
+<div class="leftcontact">
+	<img src="{$skin_path}/images/leftcontact.jpg" alt="联系我们"/>
+	<a href="{tag_内页左侧第二行栏目}" title="{lang(more2)}">{lang(more2)}</a>
+</div>

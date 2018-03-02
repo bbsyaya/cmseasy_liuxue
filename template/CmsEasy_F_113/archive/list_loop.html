@@ -1,0 +1,52 @@
+{template 'header.html'}
+<div class="box box2">
+<div class="box2_t"></div>
+<div class="box2_b"></div>
+<div class="left">
+{template 'left.html'}
+</div>
+<div class="right">
+<div class="right_t"></div>
+			<div class="title20">
+				{template 'position.html'}
+				<h5>{$category[$catid]['catname']}</h5><span>{$category[$catid]['htmldir']}</span>
+			</div>
+
+
+{loop categories($catid) $i $t}
+<div id="content">
+	<div class="title21">{$t['catname']}</div>
+	<div class="line_2"></div>
+	<div class="blank10"></div>
+	<ul id="list-view" style="float:left;width:40%;max-width:200px;min-width:130px;height:100%;margin-right:15px;text-align:center;">
+		{loop archive($t[catid],0,0,'0,0,0',20,'aid',1,ture,0) $i $archive}
+		<li><div class="img-wrap"><a title="{$archive['stitle']}" target="_blank" href="{$archive['url']}"><img alt="{$archive[stitle]}" src="{$archive[thumb]}" onerror='this.src="{config::get('onerror_pic')}"' /></a></div>
+		<h5 style="margin:10px 0 0 0;"><a title="{$archive['stitle']}" target="_blank" href="{$archive['url']}"  style="color:{$arc[color]};">{$archive['title']}</a></h5>{if $archive['attr2']}<p>{lang(price)}	:	<span>{$archive['attr2']}</span>{lang(unit)}</p>{/if}
+		</li>
+		{/loop}
+	</ul>
+	<ul class="news_list" style="overflow:hidden;">
+		{loop archive($t[catid],0,0,'0,0,0',20,'aid',10,false,0) $i $archive} 
+		<li><span class="fr pc_show">{$archive[adddate]}</span><a title="{$archive[stitle]}" href="{$archive[url]}"  style="color:{$arc[color]};">{$archive[title]}</a></li>
+		{/loop}
+	</ul>
+	<div class="clear"></div>
+</div>
+<div class="blank30"></div>
+{/loop}
+
+<div class="blank30"></div>
+<div id="content">
+<a title="{lang(gotop)}" href="#" class="clear floatright"><img alt="{lang(gotop)}" src="{$skin_url}/images/gotop.gif"></a>
+</div>
+<div class="blank30"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!-- 右侧结束 -->
+
+<div class="c_bottom"></div>
+<div class="clear"></div>
+</div>
+<!-- 中部结束 -->
+{template 'footer.html'}

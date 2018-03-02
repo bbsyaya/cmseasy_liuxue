@@ -1,0 +1,57 @@
+
+
+<link rel="stylesheet" href="{$base_url}/common/js/jquery/ui/ui.datepicker.css" type="text/css" media="screen" title="core css file" charset="utf-8" />
+<script language="javascript" src="{$base_url}/common/js/jquery/ui/ui.datepicker.js"></script>
+<script type="text/javascript" src="{$base_url}/js/upimg/dialog.js"></script>
+<link href="{$base_url}/images/dialog.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+function getEditor(name) {
+	return FCKeditorAPI.GetInstance(name);
+}
+function checkform() {
+	
+	{loop $field $f}
+	{if $f['notnull']}
+	<?php $name=$f['name']; ?>
+	if(!document.form1.{$f[name]}.value){
+		alert("{lang('pinput')}{$name|lang}");
+		document.form1.{$f[name]}.focus();
+		return false;
+	}
+	{/if}
+	{/loop}
+	return true;
+}
+</script>
+
+
+	
+	<form method="post" action="" name="form1" onsubmit="return checkform();">
+
+
+     <ul>
+		
+
+
+     
+                {loop $field $i $f}
+                <?php
+
+                $name=$f['name'];
+                if($name==$primary_key) continue; ?>
+			    <li><span>{$name|lang}</span>{form::getform($name,@$form,$field,@$data)}</li>
+                {/loop}
+<li>
+<?php if(config::get('verifycode')){ ?>
+<span>{lang(verifycode)}</span>
+<input type='text' id="verify"  tabindex="3"  name="verify" class="input"  />&nbsp;{verify()}
+<?php  } ?>
+<input type="submit" name="submit" value="{lang(submit)}" class="my_liuyan_btn" />
+</li>
+
+
+
+</ul>
+
+
