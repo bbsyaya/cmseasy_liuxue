@@ -67,69 +67,6 @@
 }
 
 
-.counsellors-xxx{
-	width:1180px;
-	height: 40px;
-	background: #efefef;
-	margin: 20px auto;
-	line-height: 40px;
-	float:left;
-}
-.counsellors-xxx h2{
-	height: 40px;
-	width: 240px;
-	float: left;
-	background: #e84444;
-	padding-left: 20px;
-	line-height: 40px;
-	color: #FFFFFF;
-}
-.maketion-xxx{
-	width:1180px;
-	height:520px;
-	margin: 0 auto;
-
-}
-.make-left-xxx{
-	width:398px;
-	height:518px;
-	border: 1px solid #dcdcdc;
-	float: left;
-}
-.make-left-xxx h3{
-	font-size: 16px;
-	margin: 20px 20px 8px 20px;
-}
-.make-left-xxx h3 a{
-	color: #e84444;
-}
-.make-left-xxx p{
-	font-size: 14px;
-	margin: 0 20px;
-	line-height: 30px;
-}
-.make-left-xxx p a{
-    color: #666666;
-}
-.make-left-xxx p i a{
-	float: right;
-	color: #e84444;
-}
-.sliders .slider-img .slider-img-ul li img{
-	width:118px;
-	height: 105px;
-}
-
-.make-right-xxx{
-	width:757px;
-	height: 520px;
-	float: right;
-	margin-left: 20px;
-	margin-bottom: 10px;
-	position: relative;
-	text-align:center;
-}
-
 
 /*轮播*/
 *:after,
