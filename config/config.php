@@ -316,7 +316,7 @@
 //开启前台客服[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置是否在网站中显示悬浮客服侧栏！" /></span>]=>1/开启/0/关闭
 
 
-'server_template'=>'2',
+'server_template'=>'1',
 
 //选择网站客服样式[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="选择网站悬浮客服样式！" /></span>]=>1/扁平彩色/2/扁平灰色/3/经典/4/旧时光
 
@@ -330,7 +330,7 @@
 
 //客服浮动框位置[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置网站悬浮客服侧栏显示位置！" /></span>]=>left/左边/right/右边
 
-'liveboxtip'=>'0', 
+'liveboxtip'=>'1', 
 
 //弹出邀请对话框[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置是否弹出主动要请对话框！" /></span>]=>1/开启/0/关闭
 
@@ -356,7 +356,7 @@
 
 //QQ号码[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系QQ号码！" /></span>]
 
-'qq3name'=>'客服三', 
+'qq3name'=>'', 
 
 //客服职务[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系人职务！" /></span>]
 
@@ -364,7 +364,7 @@
 
 //QQ号码[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系QQ号码！" /></span>]
 
-'qq4name'=>'客服四', 
+'qq4name'=>'', 
 
 //客服职务[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系人职务！" /></span>]
 
@@ -372,7 +372,7 @@
 
 //QQ号码[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系QQ号码！" /></span>]
 
-'qq5name'=>'客服五', 
+'qq5name'=>'', 
 
 //客服职务[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系人职务！" /></span>]
 
@@ -388,19 +388,19 @@
 
 //淘宝旺旺号码[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系淘宝旺旺号码！" /></span>]
 
-'aliname'=>'阿里巴巴', 
+'aliname'=>'', 
 
 //客服职务[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系人职务！" /></span>]
 
-'ali'=>'cmseasy', 
+'ali'=>'', 
 
 //阿里旺旺号码[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系阿里旺旺号码！" /></span>]
 
-'skypename'=>'Skype客服', 
+'skypename'=>'', 
 
 //客服职务[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系人职务！" /></span>]
 
-'skype'=>'admin@admin.com', 
+'skype'=>'', 
 
 //Skype号码[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系Skype号码！" /></span>]
 
@@ -453,11 +453,11 @@
 
 //屏蔽右键开关[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="打开或者关闭屏蔽鼠标右键功能" /></span>]=>0/关/1/开
 
-'reg_on'=>'1', 
+'reg_on'=>'0', 
 
 //注册开关[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置网站是否启用会员系统！" /></span>]=>0/关/1/开
 
-'site_login'=>'1',
+'site_login'=>'0',
 
 //是否显示用户登录[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置是否在网站显示用户登录" /></span>]=>0/关/1/开
 
@@ -470,21 +470,21 @@
 
 //调试开关[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置网站是否显示PHP运行错误代码！" /></span>]=>0/关/1/开
 
-'share'=>'1', 
+'share'=>'0', 
 
 //分享开关[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置网站是否显示分享功能！" /></span>]=>0/关/1/开
 
 
-'comment'=>'1', 
+'comment'=>'0', 
 
 //评论开关[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置网站是否显示评论功能！" /></span>]=>0/关/1/开
 		
-'comment_list'=>'1',
+'comment_list'=>'0',
 		
 //评论列表[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="打开或者关闭评论列表！" /></span>]=>0/关/1/开
 
 
-'comment_user'=>'1',
+'comment_user'=>'0',
 		
 //查看评论[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="是否允许查看评论列表！" /></span>]=>0/关/1/开
 
@@ -496,7 +496,7 @@
 
 //游客投稿开关[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置网站是否启用匿名发布内容，游客发布地址：http://域名/?g=1！" /></span>]=>0/关/1/开
 
-'shoppingcart'=>'1',
+'shoppingcart'=>'0',
 
 //购物车开关[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="打开或者关闭购物车链接" /></span>]=>0/关/1/开
 
@@ -550,7 +550,7 @@
 		
 //自动清除蜘蛛记录[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="自动清除蜘蛛记录" /></span>]=>0/关/1/每日/2/每周
 
-'site_push'=>'1',
+'site_push'=>'0',
 
 //百度推送[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置是否在网站开启百度自动内容推送" /></span>]=>0/关/1/开
 
@@ -644,7 +644,7 @@
 
 //开启WEB客服[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置是否启用网站WEB客服系统！" /></span>]=>open/开启/close/关闭
 
-'server_template'=>'2',
+'server_template'=>'1',
 
 //选择网站客服样式[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="选择网站悬浮客服样式！" /></span>]=>1/扁平彩色/2/扁平灰色/3/经典/4/旧时光
 
@@ -658,7 +658,7 @@
 
 //客服浮动框位置[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置网站悬浮客服侧栏显示位置！" /></span>]=>left/左边/right/右边
 
-'liveboxtip'=>'0', 
+'liveboxtip'=>'1', 
 
 //弹出邀请对话框[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置是否弹出主动要请对话框！" /></span>]=>1/开启/0/关闭
 
@@ -684,7 +684,7 @@
 
 //QQ号码[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系QQ号码！" /></span>]
 
-'qq3name'=>'客服三', 
+'qq3name'=>'', 
 
 //客服职务[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系人职务！" /></span>]
 
@@ -692,7 +692,7 @@
 
 //QQ号码[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系QQ号码！" /></span>]
 
-'qq4name'=>'客服四', 
+'qq4name'=>'', 
 
 //客服职务[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系人职务！" /></span>]
 
@@ -700,7 +700,7 @@
 
 //QQ号码[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系QQ号码！" /></span>]
 
-'qq5name'=>'客服五', 
+'qq5name'=>'', 
 
 //客服职务[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系人职务！" /></span>]
 
@@ -716,19 +716,19 @@
 
 //淘宝旺旺号码[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系淘宝旺旺号码！" /></span>]
 
-'aliname'=>'阿里巴巴', 
+'aliname'=>'', 
 
 //客服职务[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系人职务！" /></span>]
 
-'ali'=>'cmseasy', 
+'ali'=>'', 
 
 //阿里旺旺号码[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系阿里旺旺号码！" /></span>]
 
-'skypename'=>'Skype客服', 
+'skypename'=>'', 
 
 //客服职务[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系人职务！" /></span>]
 
-'skype'=>'admin@admin.com', 
+'skype'=>'', 
 
 //Skype号码[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="填写联系Skype号码！" /></span>]
 
@@ -874,11 +874,11 @@
 
 
 //slide-幻灯片设置{
-'slide_width'=>'990',
+'slide_width'=>'500',
 
 //幻灯宽度[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置幻灯片的显示宽度！" /></span>]
 
-'slide_height'=>'450',
+'slide_height'=>'300',
 
 //幻灯高度[<span class="tips" data-toggle="tooltip" data-html="ture" data-placement="left" title="设置幻灯片的显示高度！" /></span>]
 

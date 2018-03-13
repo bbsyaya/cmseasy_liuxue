@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="Generator" content="CmsEasy 5_7_0_20171111_UTF8" />
+<meta name="Generator" content="CmsEasy 5_7_0_20180208_UTF8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title><?php echo getTitle($archive,$category,$catid,$type);?><?php if($topid==0) { ?><?php } else { ?> - <?php echo get(sitename);?><?php } ?></title>
 <meta name="keywords" content="<?php echo getKeywords($archive,$category,$catid,$type);?>" />
