@@ -1,21 +1,62 @@
 <?php defined('ROOT') or exit('Can\'t Access !'); ?>
 ﻿<link href="../skin/hu.css" rel="stylesheet" type="text/css">
- <?php echo template('header.html'); ?> 
-<!---============幻灯片 ===========-->
+<link href="../skin/style.css" rel="stylesheet" type="text/css">
 
-<div class="counsellors_huandeng">
-  
-    <div class="hd">
-      <h2> 这是一个测试</h2>
+<?php echo template('header.html'); ?> 
+<!---============幻灯片 start===========-->
+<div class="focusBoxAll">
+<div class="focusleft">
+  <div class="focusBox">
+    <ul class="pic">
+      <?php echo templatetag::tag('首页幻灯片');?>
+    </ul>
+    <div class="txt-bg"></div>
+    <div class="txt">
+      <ul>
+        <?php echo templatetag::tag('首页幻灯文字');?>
+      </ul>
     </div>
+    <ul class="num">
+      <li><a>1</a><span></span></li>
+      <li><a>2</a><span></span></li>
+      <li><a>3</a><span></span></li>
+      <li><a>4</a><span></span></li>
+      <li><a>5</a><span></span></li>
+    </ul>
+  </div>
+</div>	
+  <div class="focusRight">
+    <div class="title2"> <?php echo templatetag::tag('首页第一行右侧栏目');?> </div>
+    <ul class="experts">
+  							<?php echo templatetag::tag('首页第一行右侧栏目列表8条');?>
+    </ul>
+  </div>
 
 
-<div class="maketion_xxx">
-  <div class="make_left_xxx">1</div>
-  <div class="make_right_xxx">2</div>
 </div>
-</div>
 
+
+
+<script type="text/javascript">
+jQuery(".focusBox").slide({ titCell:".num li", mainCell:".pic",effect:"fold", autoPlay:true,trigger:"click",
+//下面startFun代码用于控制文字上下切换
+startFun:function(i){
+ jQuery(".focusBox .txt li").eq(i).animate({"bottom":0}).siblings().animate({"bottom":-36});
+}
+});
+</script> 
+
+<!---============幻灯片  end===========-->
+<div class="counsellors_huandeng">
+  <div class="hd">
+    <h2> 这是一个测试</h2>
+  </div>
+  <div class="blank10">aaa</div>
+  <div class="maketion_xxx">
+    <div class="make_left_xxx">1</div>
+    <div class="make_right_xxx">2</div>
+  </div>
+</div>
 
 <!---=======================-->
 
