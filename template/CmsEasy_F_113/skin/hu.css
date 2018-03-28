@@ -29,7 +29,9 @@
         text-align: center;
     }
 
-    .slideTxtBox_huandeng .hd {
+     .hd {
+	width: 100%;
+        text-align: center;
     height: 62px;
     line-height: 40px;
     background-image: url(images/banner_hu.png);
@@ -64,7 +66,7 @@
         width: 1000px;
         height: 400px;
         /*margin: 20px auto;*/
-        float: left;
+       
 
     }
 
