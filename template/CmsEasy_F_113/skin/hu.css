@@ -2,6 +2,165 @@
 /* CSS Document */
 /*!*金吉列留学参、大师专家团*!*/
 
+.test {
+	width: 1000px;
+	height: 300px;
+	display: block;
+	float: none;
+	background-color: #00B0FB;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 440px;
+}
+
+.counsellors_huandeng{
+	width: 1000px;
+	
+	/*text-align: center;*/
+	
+	margin: 0 auto 20px auto;
+	line-height: 40px;
+	float: none;        /*display: block;*/
+    }
+
+    .slideTxtBox_huandeng {
+        width: 100%;
+        text-align: center;
+    }
+
+    .slideTxtBox_huandeng .hd {
+    height: 62px;
+    line-height: 40px;
+    background-image: url(images/banner_hu.png);
+    position: relative;
+    background-repeat: no-repeat;
+   
+    }
+
+
+
+    .counsellors_xxx {
+	width: 1000px;
+	height: 40px;
+	/*text-align: center;*/
+	background: #efefef;
+	margin: 0 auto 20px auto;
+	line-height: 40px;
+	float: none;        /*display: block;*/
+    }
+
+    .counsellors_xxx h2 {
+        height: 40px;
+        width: 240px;
+        background: #F07226;
+        float: left;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+
+
+    .maketion_xxx {
+        width: 1000px;
+        height: 400px;
+        /*margin: 20px auto;*/
+        float: left;
+
+    }
+
+    .make_left_xxx {
+        width:380px;
+        height: 400px;
+        border: 1px solid #dcdcdc;
+        float: left;
+    }
+
+    .make_right_xxx {
+        width:580px;
+        height: 400px;
+        border: 1px solid #dcdcdc;
+        float: right;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        /*position: relative;*/
+        text-align: center;
+    }
+
+    /* 本例子css */
+    .slideTxtBox {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .slideTxtBox .hd {
+        height: 40px;
+        line-height: 40px;
+        background: #f4f4f4;
+        border: 1px solid #ddd;
+        /*padding: 0 10px 0 20px;*/
+        /*border-bottom: 1px solid #ddd;*/
+        position: relative;
+    }
+
+    .slideTxtBox .hd ul {
+        height: 40px;
+        /*width: 540px;*/
+        /*background: #b2afb6;*/
+        /*padding-left: 20px;*/
+        /*padding-right: 20px;*/
+        line-height: 40px;
+        float: right;
+    }
+
+    .slideTxtBox .hd ul li {
+        float: left;
+        height: 40px;
+        width: 100px;
+        padding: 0 15px;
+        cursor: pointer;
+        background: #b2afb6;
+        text-align: center;
+    }
+
+    .slideTxtBox .hd ul li.on {
+        height: 40px;
+        background: #fff;
+        /*border: 1px solid #ddd;*/
+        /*border-bottom: 2px solid #fff;*/
+    }
+
+    .slideTxtBox .bd{
+        /*float: left;*/
+        height: 400px;
+        width: 1180px;
+        /*margin: 20px 0px;*/
+        margin: 20px auto;
+
+    }
+
+    .slideTxtBox .bd ul {
+        /*width: 100%;*/
+        /*height: 518px;*/
+        /*border: 1px solid #dcdcdc;*/
+        /*position: relative;*/
+        /*padding: 15px;*/
+        /*zoom: 1;*/
+
+    }
+
+    .slideTxtBox .bd li {
+        width: 100%;
+        height: 400px;
+        float: left;
+    }
+
+    .slideTxtBox .bd li .date {
+        /*float: right;*/
+        color: #999;
+    }
+
+
 /*f2改版*/
 .counsellors-xx{
 	width:1180px;
