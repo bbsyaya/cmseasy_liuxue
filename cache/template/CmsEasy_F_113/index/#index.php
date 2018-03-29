@@ -47,17 +47,39 @@ startFun:function(i){
 </script> 
 
 <!---============幻灯片  end===========-->
+
+
 <div class="counsellors_huandeng">
   <div class="hd">
-    <h2> 这是一个测试</h2>
-  </div>
-  <div class="blank10">aaa</div>
-  <div class="maketion_xxx">
-    <div class="make_left_xxx">1</div>
-    <div class="make_right_xxx">2</div>
+    <h2> 名师团队</h2>
   </div>
 </div>
+  <div class="blank10"></div>
 
+
+<div class="mingshipic">
+  <div class="scrollBox" style="margin:0 auto">
+<div class="ohbox">
+<ul class="piclist">
+ <?php echo templatetag::tag('名师团队');?>
+
+</ul>
+</div>
+<div class="pageBtn">
+<span class="prev"></span>
+<span class="next"></span>				
+</div>
+</div>
+<script type="text/javascript">
+/* 控制左右按钮显示 */
+jQuery(".scrollBox").hover(function(){ jQuery(this).find(".prev,.next").stop(true,true).fadeTo("show",0.5) },function(){ jQuery(this).find(".prev,.next").fadeOut() });
+
+jQuery(".scrollBox").slide({ titCell:".list li", mainCell:".piclist", effect:"left",vis:4,scroll:2,delayTime:800,trigger:"click",easing:"easeOutCirc"});
+
+
+</script>
+
+</div>
 <!---=======================-->
 
 <div class="counsellors_xxx">

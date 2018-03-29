@@ -538,4 +538,28 @@
       'submit' => '提交',
     ),
   ),
+  46 => 
+  array (
+    'id' => '46',
+    'name' => '名师团队',
+    'tagfrom' => 'content',
+    'tagcontent' => 'null',
+    'setting' => 
+    array (
+      'onlymodify' => '',
+      'catid' => '15',
+      'son' => '0',
+      'typeid' => '0',
+      'spid' => '0',
+      'length' => '',
+      'introduce_length' => '',
+      'ordertype' => 'adddate-desc',
+      'istop' => '0',
+      'limit' => '6',
+      'thumb' => 'on',
+      'attr1' => '0',
+      'tagtemplate' => 'tag_content_i_mingshi.html',
+      'submit' => '提交',
+    ),
+  ),
 );

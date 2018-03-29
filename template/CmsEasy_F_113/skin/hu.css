@@ -33,7 +33,7 @@
 	.focusBox .num li span { z-index: 1; background: black; filter: alpha(opacity=50); opacity: 0.5; }
 	.focusBox .num li.on a,.focusBox .num a:hover{ background:#f60;  }
 
-/*  2.13实用焦点图    start*/
+/*  2.13实用焦点图    end*/
 
 .focusBoxAll .focusRight {
 	width: 450px;
@@ -56,7 +56,33 @@
 	border-bottom: 1px dotted #EBEBEB;
 }
 }
+/*名师团队--照片start*/
+.scrollBox{ width:1000px;  background:url(images/scrollBg.png) ;padding:10px;border-top:1px solid #fff; position:relative; }
+	.scrollBox .piclist{ overflow:hidden; zoom:1;}
+	.scrollBox .ohbox{overflow:hidden; position:relative;width:880px;left:60px}
+	.scrollBox {position:relative;overflow:hidden;zoom:1;}
+	.scrollBox .piclist li{float:left; display:inline; width:200px;background:#fff;border:1px solid #c9bea9;margin-right:10px;padding:5px;}
+	.scrollBox .piclist li span{height:25px;line-height:25px;display:block;text-align:center;   }
 
+/*		.scrollBox .pageBtn span{ background:url(images/bntBg.png) no-repeat; display:block;width:37px;height:59px;position:absolute;top:72px;cursor:pointer;text-indent:-999em;overflow:hidden; }
+	.scrollBox .pageBtn .prev{left:20px;background-position:-11px -84px ;}
+	.scrollBox .pageBtn .next{right:20px;background-position:-53px -84px ;}*/
+
+	.scrollBox .pageBtn span,.scrollBox .pageBtn .prev,.scrollBox .pageBtn .next{ display:block;  position:absolute; z-index:1; top:50%;left: 1%; margin-top:-30px; z-index:1; width:40px; height:60px; background:url(images/slider-arrow.png) -126px -137px #000 no-repeat;  cursor:pointer; filter:alpha(opacity=50);opacity:0.5; display:none;  }
+	
+	.scrollBox .pageBtn .next{left:auto; right:1%; background-position:-6px -137px;}
+
+
+
+
+
+
+	.scrollBox .pageBtn .list{overflow:hidden;zoom:1;margin:10px 0 0 413px; }
+	.scrollBox .pageBtn .list li{ background:url(images/bntBg.png); float:left; display:inline; width:15px;height:15px;background-position:-86px -57px ;cursor:pointer;margin-left:10px;line-height:10000px;overflow:hidden;  }
+	.scrollBox .pageBtn .list li.on{background-position:-114px -end}
+
+
+/*名师团队--照片end*/
 
 .test {
 	width: 1000px;
@@ -115,6 +141,7 @@
         float: left;
         line-height: 40px;
         color: #FFFFFF;
+
     }
 
 
@@ -311,4 +338,14 @@
 	display: block;
 	width: 1000px;
 	height: 10px;
+}
+
+.counsellors_huandeng .hd h2 {
+    color: #FFFCFC;
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    position: relative;
+    top: 15px;
 }

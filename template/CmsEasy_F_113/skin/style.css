@@ -3,6 +3,14 @@
 ----------------------------------------------------------------------*/
 body, div, dl, dt, dd, ul, ol, li, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote 
 { margin: 0; padding: 0; _background-image:url(about:blank);_background-attachment:fixed;}
+.mingshipic {
+    width: 1000px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 
 
 
