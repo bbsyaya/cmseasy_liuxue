@@ -1,0 +1,79 @@
+{template 'header.html'}
+
+
+<div class="con1">
+    <div class="con1left">
+        <div class="con1title1">
+            {tag_首页第一行左侧栏目}
+        </div>
+        <div class="con1_box">
+            <ul class="course_ul">
+                {tag_首页第一行左侧栏目图片3条}
+            </ul>
+        </div>
+    </div>
+    <div class="con1right">
+        <div class="con1title2">
+           {tag_首页第一行右侧栏目}
+        </div>
+        <ul class="enroll_ul">
+                        {tag_首页第一行右侧栏目列表3条}
+                    </ul>
+        <p class="contact_tit">
+            <img src="{$skin_path}/images/contact.jpg" alt="联系我们"/>
+        </p>
+        <div class="contact">
+            <span>{lang(tel)}：{get(tel)}</span>
+            <span>{lang(fax)}：{get(fax)}</span><br />
+            <span>{lang(address)}：{get(address)}</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script language="JavaScript" type="text/javascript" src="{$skin_path}/js/nav.js"></script>
+<div class="con2">
+    <div class="con2title">
+		{tag_首页第二行栏目}
+    </div>
+    <div class="movead">
+        <a onmouseup="ISL_StopUp_1()" class="LeftBotton" onmousedown="ISL_GoUp_1()" onmouseout="ISL_StopUp_1()" href="javascript:void(0);"></a>
+        <div class=pcont id=ISL_Cont_1>
+            <div class=ScrCont>
+                <div id=List1_1>
+                                        {tag_首页第二行滚动图片}
+					                </div>
+                <div id=List2_1></div></div></div><a onmouseup="ISL_StopDown_1()" class="RightBotton" onmousedown="ISL_GoDown_1()" onmouseout="ISL_StopDown_1()" href="javascript:void(0);"></a>
+    </div>
+    <SCRIPT type=text/javascript>
+        <!--
+        picrun_ini()
+        //-->
+    </SCRIPT>
+</div>
+<div class="con3">
+    <div class="con3left">
+        <div class="con3title1">
+            {tag_首页第三行左侧栏目}
+        </div>
+        <div class="newstop">
+            {tag_首页第三行左侧栏目图文头条}
+        </div>
+        <ul class="newsul">
+                        {tag_首页第三行左侧栏目列表3条}
+                    </ul>
+    </div>
+    <div class="con3right">
+        <div class="con3title2">
+            {tag_首页第三行右侧栏目}
+        </div>
+        <ul class="con3_pro">
+                        {tag_首页第三行右侧栏目图片3条}
+                    </ul>
+    </div>
+</div>
+
+
+{template 'footer.html'}

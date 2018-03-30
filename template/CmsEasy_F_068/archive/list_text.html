@@ -1,0 +1,53 @@
+{template 'header.html'}
+<div class="box box2">
+<div class="box2_t"></div>
+<div class="box2_b"></div>
+<div class="left">
+{template 'left.html'}
+</div>
+<div class="right">
+<div class="right_t"></div>
+<div class="right_b"></div>
+			<div class="title20">
+				{template 'position.html'}
+				<h5>{$category[$catid]['catname']}</h5><span>{$category[$catid]['htmldir']}</span>
+			</div>
+
+
+<div class="blank20"></div>
+<!-- 栏目标题结束 -->
+
+<div id="content">
+
+<!-- 内容列表开始 -->
+{loop $archives $i $arc}
+<div class="news_text">
+<h5><span class="date">{$arc[adddate]}</span><a title="{$arc[stitle]}" target="_blank" href="{$arc[url]}">{$arc[title]}</a></h5>
+<p>{cut(strip_tags($arc['introduce']),100)}…<a title="{$arc[stitle]}" href="{$arc[url]}">[{lang(more)}]</a><p>
+<div class="clear"></div>
+</div>
+{/loop}
+<!-- 内容列表结束 -->
+
+
+<div class="blank30"></div>
+
+<!-- 内容列表分页开始 -->
+{if isset($pages)}
+{category_pagination($catid)}
+{/if}
+<!-- 内容列表分页结束 -->
+
+<div class="blank30"></div>
+<a title="{lang(gotop)}" href="#" class="clear floatright"><img alt="{lang(gotop)}" src="{$skin_url}/images/gotop.gif"></a>
+<div class="blank30"></div>
+<div class="clear"></div>
+</div>
+</div>
+<!-- 右侧结束 -->
+
+<div class="c_bottom"></div>
+<div class="clear"></div>
+</div>
+<!-- 中部结束 -->
+{template 'footer.html'}

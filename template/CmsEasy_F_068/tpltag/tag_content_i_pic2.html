@@ -1,0 +1,12 @@
+{loop archive($_catid,$_typeid,$_spid,$_area,$_length,$_ordertype,$_limit,$_image,$_attr1,$_son,$_wheretype,$_tpl,$_intro_len,$_istop) $archive}
+
+
+
+
+								<p class="pl">
+                       <a title="{$archive['stitle']}" target="_blank" href="{$archive['url']}"><img alt="{$archive['stitle']}" src="{$archive['thumb']}"  width="195" height="139" class="" /></a>
+                        <a title="{$archive['stitle']}" target="_blank" href="{$archive['url']}" class="protitle">{$archive['title']}</a>
+                    </p>
+						
+
+{/loop}

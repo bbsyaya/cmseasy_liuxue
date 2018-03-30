@@ -1,0 +1,66 @@
+<script type="text/javascript">
+function getEditor(name) {
+	return FCKeditorAPI.GetInstance(name);
+}
+function checkform() {
+	
+	{loop $field $f}
+	{if $f['notnull']}
+	<?php $name=$f['name']; ?>
+	if(!document.form1.{$f[name]}.value){
+		alert("{lang('pinput')}{$name|lang}");
+		document.form1.{$f[name]}.focus();
+		return false;
+	}
+	{/if}
+	{/loop}
+	return true;
+}
+</script>
+
+<style>
+ul.jiudianyuding{}
+ul.jiudianyuding li{clear:both;height:40px;width:117px;margin:5px 0 0 0;overflow:hidden;}
+ul.jiudianyuding li span{display:block;line-height26px;}
+input{height:18px;width:115px;border:1px solid #CCC;}
+ul.jiudianyuding li .jiudianyuding_btn{border: 0px solid #DDD;width: 87px;height: 24px;line-height: 500px;text-indent: -9999px;background: url({$skin_path}/images/btn_scheduled.gif) no-repeat left top;}
+ul.jiudianyuding li .jiudianyuding_btn:hover{cursor:pointer;background: url({$skin_path}/images/btn_scheduled.gif) no-repeat left -24px;}
+
+</style>
+
+<h3>{lang(jiudianyuding)}</h3>
+
+
+<ul class="jiudianyuding">
+	    <form method="post" action="" name="form1" onsubmit="return checkform();">
+
+
+
+                {loop $field $i $f}
+                <?php
+
+                $name=$f['name'];
+                if($name==$primary_key) continue; ?>
+
+					<li><span>{$name|lang}</span>{form::getform($name,@$form,$field,@$data)}</li>
+
+                {/loop}
+<?php if(config::get('verifycode')){ ?>
+
+<li style="height:55px;"><span>
+{lang(verifycode)}</span>
+<input type='text' id="verify"  tabindex="3"  name="verify" class="input" style="width:35px;" />&nbsp;{verify()}
+</li>
+
+<?php  } ?>
+
+
+<li>
+<input type="submit" name="submit" value="{lang(submit)}" class="jiudianyuding_btn" />
+</li>
+
+
+</form>
+
+
+</ul>
